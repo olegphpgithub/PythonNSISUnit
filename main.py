@@ -1,5 +1,6 @@
 import re
 import os
+import glob
 import subprocess
 from collections import OrderedDict
 
@@ -37,19 +38,20 @@ def compile_file(compiler_path, source_file):
 
     try:
         device_null = open(os.devnull, 'wb')
-        result = subprocess.Popen(compiler_command, stderr=device_null, shell=False)
+        result = subprocess.Popen(compiler_command,
+                                  stdout=subprocess.PIPE,
+                                  stderr=device_null,
+                                  shell=False)
         text = result.communicate()
         return_code = result.returncode
 
         if return_code != 0:
             print('Error: Could not compiled target file')
+            print(text[0])
             exit(1)
-        else:
-            print(text)
-            print('Target file was compiled successfully')
 
-    except Exception as inst:
-        print("EncryptFile: Error: An exception occurred while calling external program: %s" % str(inst))
+    except Exception as ex:
+        print("Error: An exception occurred while calling external program: %s: %s" % (compiler_command, str(ex)))
         exit(1)
 
 
@@ -64,7 +66,16 @@ def change_compressor(source_file_path, compressor):
         source_file.write(content_new)
 
 
-# compile_file(r'c:\Program Files (x86)\nsis-2.46.47.1\makensis.exe', r'c:\progs\nsislearn01\__argv.nsi')
+"""
+    Remove files in output directory
+"""
+fileList = glob.glob("%s%s%s" % (OUTPUT_DIRECTORY, os.sep, r'*.exe'))
+for filePath in fileList:
+    try:
+        os.remove(filePath)
+    except OSError:
+        print("Error while deleting file : ", filePath)
+
 
 fill_compilers_dict(COMPILERS_FILENAME)
 
