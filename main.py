@@ -7,6 +7,7 @@ from collections import OrderedDict
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 SOURCE_FILENAME = os.path.join(BASE_DIR, r"example.nsi")
+BUILD_OUTPUT_FILENAME = os.path.join(BASE_DIR, r"example.exe")
 COMPILERS_FILENAME = os.path.join(BASE_DIR, r"list.txt")
 OUTPUT_DIRECTORY = os.path.join(BASE_DIR, r"output")
 
@@ -28,7 +29,7 @@ def fill_compilers_dict(file_path):
         input_lines = input_file.readlines()
         for index, line in enumerate(input_lines):
             compiler_index = line.strip().split(os.sep)[2]
-            available_compilers[compiler_index] = line.strip().strip(r'"')
+            available_compilers[compiler_index] = line.strip().strip(r'\'"')
 
 
 def compile_file(compiler_path, source_file):
@@ -69,49 +70,36 @@ def clear_output_directory():
     """
         Remove files in output directory
     """
-    file_list = glob.glob(r'%s%s%s' % (OUTPUT_DIRECTORY, os.sep, r'*.exe'))
-    for file_path in file_list:
+    if os.path.exists(OUTPUT_DIRECTORY):
+        file_list = glob.glob(r'%s%s%s' % (OUTPUT_DIRECTORY, os.sep, r'*.exe'))
+        for file_path in file_list:
+            try:
+                os.remove(file_path)
+            except OSError:
+                raise AssertionError(r'Could not clear output directory: Error while deleting file %s' % file_path)
+    else:
         try:
-            os.remove(file_path)
+            os.mkdir(OUTPUT_DIRECTORY)
         except OSError:
-            raise AssertionError(r'Could not clear output directory: Error while deleting file %s' % file_path)
-
-
-def get_build_output_filename():
-    print(SOURCE_FILENAME)
-    with open(SOURCE_FILENAME, r'r+') as source_file:
-        content_file = source_file.read()
-        pattern = re.compile(r'OutFile\s+(.+)')
-        match = pattern.search(content_file)
-        if match:
-            output_filename = match.group(1).strip(r'\'"')
-            if os.path.isabs(output_filename):
-                return output_filename
-            else:
-                return r'%s%s%s' % (os.path.dirname(SOURCE_FILENAME),
-                                    os.sep,
-                                    output_filename)
-        else:
-            raise AssertionError(r'Error: Invalid script: There is no "OutFile" command')
+            raise AssertionError(r'Could not create output directory: "%s"' % OUTPUT_DIRECTORY)
 
 
 try:
     clear_output_directory()
     fill_compilers_dict(COMPILERS_FILENAME)
-    build_output_filename = get_build_output_filename()
     for current_compiler_key in available_compilers.keys():
         for current_compressor_key in available_compressors.keys():
             change_compressor(SOURCE_FILENAME, available_compressors[current_compressor_key])
             compile_file(available_compilers[current_compiler_key], SOURCE_FILENAME)
-            target_filename = os.path.basename(build_output_filename)
-            target_filename = target_filename[:-4]
-            target_filename = r'%s%s%s.%s.%s.exe' % (OUTPUT_DIRECTORY,
-                                                     os.sep,
-                                                     target_filename,
-                                                     current_compiler_key,
-                                                     current_compressor_key)
-            print(target_filename)
-            os.rename(build_output_filename, target_filename)
+            build_target_filename = os.path.basename(BUILD_OUTPUT_FILENAME)
+            build_target_filename = build_target_filename[:-4]
+            build_target_filename = r'%s%s%s.%s.%s.exe' % (OUTPUT_DIRECTORY,
+                                                           os.sep,
+                                                           build_target_filename,
+                                                           current_compiler_key,
+                                                           current_compressor_key)
+            print(build_target_filename)
+            os.rename(BUILD_OUTPUT_FILENAME, build_target_filename)
     exit(0)
 except AssertionError as ex:
     print(ex.message)
