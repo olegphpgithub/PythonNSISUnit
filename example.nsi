@@ -22,6 +22,8 @@
 
   ;Request application privileges for Windows Vista
   RequestExecutionLevel user
+  
+  SetCompressor /SOLID lzma
 
 ;--------------------------------
 ;Interface Settings

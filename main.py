@@ -34,9 +34,12 @@ def fill_compilers_dict(file_path):
 
 def compile_file(compiler_path, source_file):
 
-    compiler_command = r'"%s" "%s"' % (compiler_path, source_file)
+    if os.path.exists(BUILD_OUTPUT_FILENAME):
+        os.remove(BUILD_OUTPUT_FILENAME)
 
     try:
+        compiler_command = r'"%s" "%s"' % (compiler_path, source_file)
+
         device_null = open(os.devnull, r'wb')
         result = subprocess.Popen(compiler_command,
                                   stdout=subprocess.PIPE,
@@ -50,9 +53,13 @@ def compile_file(compiler_path, source_file):
             print(text[0])
             exit(1)
 
-    except Exception as ex:
-        print(r'Error: An exception occurred while calling external program: %s: %s' % (compiler_command, str(ex)))
-        exit(1)
+    except Exception as cex:
+        raise AssertionError(r'Error: An exception occurred while calling external program: %s: %s'
+                             % (compiler_command, str(cex)))
+
+    if not os.path.exists(BUILD_OUTPUT_FILENAME):
+        raise AssertionError(r'Could not found output file "%s": Did you forget to specify output file in '
+                             'BUILD_OUTPUT_FILENAME macro?' % BUILD_OUTPUT_FILENAME)
 
 
 def change_compressor(source_file_path, compressor):
@@ -63,6 +70,7 @@ def change_compressor(source_file_path, compressor):
         content_old = source_file.read()
         content_new = re.sub(r'SetCompressor.*', compressor_statement, content_old, flags=re.M)
         source_file.seek(0)
+        source_file.truncate(0)
         source_file.write(content_new)
 
 
@@ -101,7 +109,6 @@ try:
             print(build_target_filename)
             os.rename(BUILD_OUTPUT_FILENAME, build_target_filename)
     exit(0)
-except AssertionError as ex:
-    print(ex.message)
+except BaseException as bex:
+    print(bex)
     exit(1)
-
