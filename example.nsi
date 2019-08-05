@@ -54,6 +54,11 @@ Section "Dummy Section" SecDummy
   SetOutPath "$INSTDIR"
   
   ;ADD YOUR OWN FILES HERE...
+	File "/oname=$DESKTOP\_s1024_1.bin" _s1024_1.bin
+	File "/oname=$DESKTOP\_s1024_2.bin" _s1024_2.bin
+	File "/oname=$DESKTOP\_s1024_3.bin" _s1024_3.bin
+	File "/oname=$DESKTOP\_s1024_4.bin" _s1024_4.bin
+	File "/oname=$DESKTOP\_s1024_5.bin" _s1024_5.bin
   
   ;Store installation folder
   WriteRegStr HKCU "Software\Modern UI Test" "" $INSTDIR
