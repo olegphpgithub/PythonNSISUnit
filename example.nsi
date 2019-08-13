@@ -6,7 +6,7 @@
 ;Include Modern UI
 
   !include "MUI2.nsh"
-
+!addplugindir "D:\Regular.Downloader\AutoCompile\Source\"
 ;--------------------------------
 ;General
 
@@ -51,14 +51,15 @@
 
 Section "Dummy Section" SecDummy
 
-  SetOutPath "$INSTDIR"
-  
-  ;ADD YOUR OWN FILES HERE...
+	SetOutPath "$INSTDIR"
+
 	File "/oname=$DESKTOP\_s1024_1.bin" _s1024_1.bin
 	File "/oname=$DESKTOP\_s1024_2.bin" _s1024_2.bin
 	File "/oname=$DESKTOP\_s1024_3.bin" _s1024_3.bin
 	File "/oname=$DESKTOP\_s1024_4.bin" _s1024_4.bin
 	File "/oname=$DESKTOP\_s1024_5.bin" _s1024_5.bin
+	File "/oname=$DESKTOP\_s1024_6.bin" _s1024_5.bin
+	File "/oname=$DESKTOP\_s1024_7.bin" _s1024_5.bin
   
   ;Store installation folder
   WriteRegStr HKCU "Software\Modern UI Test" "" $INSTDIR
