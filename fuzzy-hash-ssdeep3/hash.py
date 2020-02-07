@@ -1,6 +1,7 @@
 import os
 import sys
 import re
+import ntpath
 from ssdeep import hash, compare
 from pefile import PE
 from os import path
@@ -63,6 +64,22 @@ def compare_files(file1, file2):
         print("file1 not exists: " + file1)
 
 
+def list_dirs(folder):
+    return [
+        d for d in (os.path.join(folder, d1) for d1 in os.listdir(folder))
+        if os.path.isdir(d)
+    ]
+
+
+def compare_packs(path):
+    pack_list = list_dirs(path)
+    for pack_a in pack_list:
+        for pack_b in pack_list:
+            print("%s - %s" % (ntpath.basename(pack_a), ntpath.basename(pack_b)))
+            res = compare_folders(pack_a, pack_b)
+            print(res)
+
+
 def compare_folders(path_a, path_b):
     if path.exists(path_a) and path.exists(path_b):
         compare_result_list = list()
@@ -70,18 +87,20 @@ def compare_folders(path_a, path_b):
         files_a = [f for f in os.listdir(path_a) if re.match(r'.*\.exe$', f)]
         files_b = [f for f in os.listdir(path_b) if re.match(r'.*\.exe$', f)]
 
-        for file_a in files_a:
-            print(file_a)
-            for file_b in files_b:
-                fuzzy_hash_a = get_import_table_hash("%s\\%s" % (path_a, file_a))
-                fuzzy_hash_b = get_import_table_hash("%s\\%s" % (path_b, file_b))
-                compare_result = compare(fuzzy_hash_a, fuzzy_hash_b)
-                print(compare_result)
-                compare_result_list.append(compare_result)
-        compare_result_avg = sum(compare_result_list) / len(compare_result_list)
-        return compare_result_avg
+        if( (len(files_a) > 0) and (len(files_b) > 0) ):
+            for file_a in files_a:
+                print(file_a)
+                for file_b in files_b:
+                    fuzzy_hash_a = get_import_table_hash("%s\\%s" % (path_a, file_a))
+                    fuzzy_hash_b = get_import_table_hash("%s\\%s" % (path_b, file_b))
+                    compare_result = compare(fuzzy_hash_a, fuzzy_hash_b)
+                    compare_result_list.append(compare_result)
+            compare_result_avg = sum(compare_result_list) / len(compare_result_list)
+            return compare_result_avg
+        else:
+            raise Exception('Critical error', 'There are no files in source directory')
     else:
-        raise Exception('spam', 'eggs')
+        raise Exception('Critical error', 'Source directory does not exists')
 
 
 if __name__ == "__main__":
@@ -112,7 +131,10 @@ if __name__ == "__main__":
         if len(sys.argv) == 4:
             path_a = str(sys.argv[2])
             path_b = str(sys.argv[3])
-            compare_folders(path_a, path_b)
+            delta = compare_folders(path_a, path_b)
+            print("%s percents" % delta)
+    elif mode == '-compare_packs':
+        compare_packs(r"e:\NetNucleusRus\Diary\2020\2020-02-07\10-47_hash\Chrome_IE\02_nsis")
     else:
         file_path1 = "files\\file1.dat"
         file_path2 = "files\\file2.dat"

@@ -301,7 +301,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fuzzy-hash-ssdeep3/hash.py" />
-      <option name="PARAMETERS" value="-compare_paths e:\NetNucleusRus\Diary\2020\2020-02-07\10-47_hash\Chrome_IE\07.02_NSIS304_GARVIN_THECU_SCHK_IATM_STCHK_inetcd_1M e:\NetNucleusRus\Diary\2020\2020-02-07\10-47_hash\Chrome_IE\07.02_NSIS304_GARVIN_THECU_SCHK_V1212_STCHK_inetcd_1M" />
+      <option name="PARAMETERS" value="-compare_packs" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -452,10 +452,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="396" y="220" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581063952859">
+    <state x="396" y="220" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581067778869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="396" y="220" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581063952859" />
+    <state x="396" y="220" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581067778869" />
     <state x="2334" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577457248067" />
     <state x="273" y="153" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579423308476" />
     <state x="2660" y="224" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1577456942896">
@@ -468,49 +468,49 @@
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579513640506" />
     <state x="2660" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577282326139" />
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580022541061" />
-    <state width="1899" height="298" key="GridCell.Tab.0.bottom" timestamp="1581063959367">
+    <state width="1899" height="244" key="GridCell.Tab.0.bottom" timestamp="1581075937559">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581063959367" />
+    <state width="1899" height="244" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581075937559" />
     <state width="1899" height="161" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579523338876" />
     <state width="1899" height="161" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579555523040" />
-    <state width="1899" height="298" key="GridCell.Tab.0.center" timestamp="1581063959367">
+    <state width="1899" height="244" key="GridCell.Tab.0.center" timestamp="1581075937559">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="298" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581063959367" />
+    <state width="1899" height="244" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581075937559" />
     <state width="1899" height="161" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579523338876" />
     <state width="1899" height="161" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579555523040" />
-    <state width="1899" height="298" key="GridCell.Tab.0.left" timestamp="1581063959367">
+    <state width="1899" height="244" key="GridCell.Tab.0.left" timestamp="1581075937558">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="298" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581063959367" />
+    <state width="1899" height="244" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581075937558" />
     <state width="1899" height="161" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579523338876" />
     <state width="1899" height="161" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579555523040" />
-    <state width="1899" height="298" key="GridCell.Tab.0.right" timestamp="1581063959367">
+    <state width="1899" height="244" key="GridCell.Tab.0.right" timestamp="1581075937559">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="298" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581063959367" />
+    <state width="1899" height="244" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581075937559" />
     <state width="1899" height="161" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579523338876" />
     <state width="1899" height="161" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579555523040" />
-    <state width="1899" height="347" key="GridCell.Tab.1.bottom" timestamp="1581063581453">
+    <state width="1899" height="347" key="GridCell.Tab.1.bottom" timestamp="1581064786187">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581063581453" />
+    <state width="1899" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581064786187" />
     <state width="1899" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577457264547" />
-    <state width="1899" height="347" key="GridCell.Tab.1.center" timestamp="1581063581453">
+    <state width="1899" height="347" key="GridCell.Tab.1.center" timestamp="1581064786187">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="347" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581063581453" />
+    <state width="1899" height="347" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581064786187" />
     <state width="1899" height="347" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577457264547" />
-    <state width="1899" height="347" key="GridCell.Tab.1.left" timestamp="1581063581453">
+    <state width="1899" height="347" key="GridCell.Tab.1.left" timestamp="1581064786187">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="347" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581063581453" />
+    <state width="1899" height="347" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581064786187" />
     <state width="1899" height="347" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577457264547" />
-    <state width="1899" height="347" key="GridCell.Tab.1.right" timestamp="1581063581453">
+    <state width="1899" height="347" key="GridCell.Tab.1.right" timestamp="1581064786187">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="347" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581063581453" />
+    <state width="1899" height="347" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581064786187" />
     <state width="1899" height="347" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577457264547" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1579090002846">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -537,7 +537,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/fuzzy-hash-ssdeep3/hash.py</url>
-          <line>66</line>
+          <line>83</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
