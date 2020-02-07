@@ -1,4 +1,6 @@
+import os
 import sys
+import re
 from ssdeep import hash, compare
 from pefile import PE
 from os import path
@@ -61,6 +63,27 @@ def compare_files(file1, file2):
         print("file1 not exists: " + file1)
 
 
+def compare_folders(path_a, path_b):
+    if path.exists(path_a) and path.exists(path_b):
+        compare_result_list = list()
+
+        files_a = [f for f in os.listdir(path_a) if re.match(r'.*\.exe$', f)]
+        files_b = [f for f in os.listdir(path_b) if re.match(r'.*\.exe$', f)]
+
+        for file_a in files_a:
+            print(file_a)
+            for file_b in files_b:
+                fuzzy_hash_a = get_import_table_hash("%s\\%s" % (path_a, file_a))
+                fuzzy_hash_b = get_import_table_hash("%s\\%s" % (path_b, file_b))
+                compare_result = compare(fuzzy_hash_a, fuzzy_hash_b)
+                print(compare_result)
+                compare_result_list.append(compare_result)
+        compare_result_avg = sum(compare_result_list) / len(compare_result_list)
+        return compare_result_avg
+    else:
+        raise Exception('spam', 'eggs')
+
+
 if __name__ == "__main__":
     mode = None
     try:
@@ -85,6 +108,11 @@ if __name__ == "__main__":
             compare_files(file_path1, file_path2)
         else:
             print("arguments exception")
+    elif mode == '-compare_paths':
+        if len(sys.argv) == 4:
+            path_a = str(sys.argv[2])
+            path_b = str(sys.argv[3])
+            compare_folders(path_a, path_b)
     else:
         file_path1 = "files\\file1.dat"
         file_path2 = "files\\file2.dat"
