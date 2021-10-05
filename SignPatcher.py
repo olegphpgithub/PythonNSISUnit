@@ -64,7 +64,7 @@ class Patcher:
     _path: str = str()
     _data: str = str()
     _cert_pattern: str = "3082(?:05|06)"
-    _seq_pattern: str = "300d06092a864886f70d01010b05000382"
+    _seq_pattern: str = "300d06092a864886f70d01010b..000382"
     _certificates: List[Certificate] = list()
     # fmt: off
     _bytes: List[str] = [
@@ -92,12 +92,21 @@ class Patcher:
     def _search_certificates(self):
         for match in re.finditer(self._cert_pattern, self._data):
             cert_start = match.start()
-            pattern_start = self._data.find(self._seq_pattern, cert_start)
-            cert_end = pattern_start + len(self._seq_pattern) + 518
-            offset = pattern_start + 26
-            cert = Certificate(self._data[cert_start:cert_end], offset)
-            if cert.is_valid():
-                self._certificates.append(cert)
+            rest = self._data[cert_start:]
+            efc = re.search(self._seq_pattern, rest)
+            if efc is not None:
+                pattern_start = efc.start() + cert_start
+                cert_end = pattern_start + len(self._seq_pattern) + 518
+                offset = pattern_start + 26
+                cert_data_src = self._data[cert_start:cert_end]
+                before = slice(None, offset - cert_start)
+                after = slice(offset - cert_start + 2, None)
+                cert_data_rfc = cert_data_src[before] + '05' + cert_data_src[after]
+                byte_former = self._data[offset:offset + 2]
+                cert = Certificate(cert_data_rfc, offset)
+                if cert.is_valid():
+                    print(f"Found a certificate (type: {cert.type}, offset: {offset // 2}, byte: {byte_former})")
+                    self._certificates.append(cert)
 
     def _patch_certificates(self, cert_type: CertificateType, byte: str):
         for cert in self._certificates:
