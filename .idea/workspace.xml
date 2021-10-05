@@ -2,8 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdaf022f-16bb-4e22-b25b-c4b4130424b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/PythonNSISUnit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonNSISUnit.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fuzzy-hash-ssdeep3/hash.py" beforeDir="false" afterPath="$PROJECT_DIR$/fuzzy-hash-ssdeep3/hash.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_s0512_0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_s1024_0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_s1024_1.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_s1024_2.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_s1024_3.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_s1024_4.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_s1024_5.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_s1024_6.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_s1024_7.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_s1024_8.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_s1024_9.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_s1024_A.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_s1024_B.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_s1024_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_s1024_D.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_s1024_E.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_s1024_F.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example.nsi" beforeDir="false" afterPath="$PROJECT_DIR$/example.nsi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fuzzy-hash-ssdeep3/files/file1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/fuzzy-hash-ssdeep3/files/file1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fuzzy-hash-ssdeep3/files/file2.dat" beforeDir="false" afterPath="$PROJECT_DIR$/fuzzy-hash-ssdeep3/files/file2.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/list.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,16 +48,16 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PythonMasterReport" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SignPatcher.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.hash">
+  <component name="RunManager" selected="Python.SignPatcher">
     <configuration name="AvListParser" type="PythonConfigurationType" factoryName="Python">
       <module name="PythonNSISUnit" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -57,7 +79,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="BuildPP.Regular" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="BuildPP.REG" type="PythonConfigurationType" factoryName="Python">
       <module name="PythonNSISUnit" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -65,11 +87,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Python37\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader/Sources/Fusion/" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Sources/Fusion/" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader/Sources/Fusion/BuildPP.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Sources/Fusion/BuildPP.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,12 +108,33 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Python37\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.UAC/Sources/Fusion/" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.02.STD.UAC/Sources/Fusion/" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.UAC/Sources/Fusion/BuildPP.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.02.STD.UAC/Sources/Fusion/BuildPP.py" />
       <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DeleteFile.REG" type="PythonConfigurationType" factoryName="Python">
+      <module name="PythonNSISUnit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Tools/Python/" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Tools/Python/DeleteFile.py" />
+      <option name="PARAMETERS" value="d:\nnRus.Git\CppDownloader.01.STD.REG\Setup\res\ring.wav" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -141,6 +184,90 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="GenerateCatalog" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="PythonNSISUnit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Tools/Python/" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Tools/Python/GenerateCatalog.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="GenerateDynamicFiles.REG" type="PythonConfigurationType" factoryName="Python">
+      <module name="PythonNSISUnit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Tools/Python/" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Tools/Python/GenerateDynamicFiles.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="GenerateDynamicFiles.UAC" type="PythonConfigurationType" factoryName="Python">
+      <module name="PythonNSISUnit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.02.STD.UAC/Tools/Python/" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.02.STD.UAC/Tools/Python/GenerateDynamicFiles.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="GenerateFakeCode.REG" type="PythonConfigurationType" factoryName="Python">
+      <module name="PythonNSISUnit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Plugins/FusionPlusPlus/" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Plugins/FusionPlusPlus/GenerateFakeCode.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="GenerateImportTable" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PythonNSISUnit" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,11 +276,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Python37\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader/Tools/Python/" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Plugins/FusionPlusPlus/ImportTable/" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader/Tools/Python/GenerateImportTable.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Plugins/FusionPlusPlus/ImportTable/GenerateImportTable.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="GenerateImportTable.REG.FUSION" type="PythonConfigurationType" factoryName="Python">
+      <module name="PythonNSISUnit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Plugins/FusionPlusPlus/ImportTable/" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Plugins/FusionPlusPlus/ImportTable/GenerateImportTable.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,12 +318,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Python37\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader/Plugins/WebDiscoverHelper/Build_Events/" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader/Plugins/WebDiscoverHelper/Build_Events/Post-Build_Event.py" />
-      <option name="PARAMETERS" value="&quot;d:\nnRus.Git\CppDownloader\Output\WebDiscoverHelper.exe&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Post-Build_Event.py" />
+      <option name="PARAMETERS" value="&quot;d:\nnRus.Git\CppDownloader.01.STD.REG\ASProtect2.aspr2&quot; &quot;d:\nnRus.Git\CppDownloader.01.STD.REG\MultyHash&quot;" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -183,7 +331,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ProductDetector" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="ProductDetector.UAC" type="PythonConfigurationType" factoryName="Python">
       <module name="PythonNSISUnit" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -191,12 +339,54 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Python37\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader/Plugins/BigModule/" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.02.STD.UAC/Plugins/BigModule/" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader/Plugins/BigModule/ProductDetector.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.02.STD.UAC/Plugins/BigModule/ProductDetector.py" />
       <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SignPatcher" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="PythonNSISUnit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SignPatcher.py" />
+      <option name="PARAMETERS" value="--main 2b --input-file &quot;d:\PythonNSISUnit\tmp.exe&quot; --output-file &quot;d:\PythonNSISUnit\tmp.exe&quot;" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="WDHelper_Post-Build_Event" type="PythonConfigurationType" factoryName="Python">
+      <module name="PythonNSISUnit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Plugins/WebDiscoverHelper/Build_Events/" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Plugins/WebDiscoverHelper/Build_Events/Post-Build_Event.py" />
+      <option name="PARAMETERS" value="d:\nnRus.Git\CppDownloader.01.STD.REG\Sources\Fusion\FusionPP.exe" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -218,6 +408,27 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../nnRus.Git/CppDownloader/aspr.py" />
       <option name="PARAMETERS" value="d:\nnRus.Git\CppDownloader\ASProtect2.aspr2 d:\nnRus.Git\CppDownloader\MultyHash\file.exe" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="back_to_original" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="PythonNSISUnit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/back_to_original.py" />
+      <option name="PARAMETERS" value="d:\PythonNSISUnit\avgUI_1_m.exe d:\PythonNSISUnit\output 1" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -309,7 +520,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="json_parse" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PythonNSISUnit" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -317,11 +528,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Python37\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/json_parse.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -393,38 +604,58 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="spoil_import_table" type="PythonConfigurationType" factoryName="Python">
+      <module name="PythonNSISUnit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spoil_import_table.py" />
+      <option name="PARAMETERS" value="d:\PythonNSISUnit\1.exe" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.AvListParser" />
-      <item itemvalue="Python.BuildPP.Regular" />
+      <item itemvalue="Python.BuildPP.REG" />
       <item itemvalue="Python.BuildPP.UAC" />
+      <item itemvalue="Python.DeleteFile.REG" />
       <item itemvalue="Python.FunctionName" />
       <item itemvalue="Python.GenerateCXRKey" />
+      <item itemvalue="Python.GenerateCatalog" />
+      <item itemvalue="Python.GenerateDynamicFiles.REG" />
+      <item itemvalue="Python.GenerateDynamicFiles.UAC" />
+      <item itemvalue="Python.GenerateFakeCode.REG" />
       <item itemvalue="Python.GenerateImportTable" />
+      <item itemvalue="Python.GenerateImportTable.REG.FUSION" />
       <item itemvalue="Python.Post-Build_Event" />
-      <item itemvalue="Python.ProductDetector" />
+      <item itemvalue="Python.ProductDetector.UAC" />
+      <item itemvalue="Python.SignPatcher" />
+      <item itemvalue="Python.WDHelper_Post-Build_Event" />
       <item itemvalue="Python.aspr" />
+      <item itemvalue="Python.back_to_original" />
       <item itemvalue="Python.common_define_strings" />
       <item itemvalue="Python.copy_eset" />
       <item itemvalue="Python.entropy" />
-      <item itemvalue="Python.main" />
-      <item itemvalue="Python.md5utils" />
       <item itemvalue="Python.hash" />
+      <item itemvalue="Python.json_parse" />
+      <item itemvalue="Python.md5utils" />
       <item itemvalue="Python.modify_files" />
       <item itemvalue="Python.sign_regular" />
+      <item itemvalue="Python.spoil_import_table" />
     </list>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -443,79 +674,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="396" y="220" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581067778869">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="396" y="220" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581067778869" />
-    <state x="2334" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577457248067" />
-    <state x="273" y="153" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579423308476" />
-    <state x="2660" y="224" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1577456942896">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2660" y="224" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577456942896" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1580022541061">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579513640506" />
-    <state x="2660" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577282326139" />
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580022541061" />
-    <state width="1899" height="244" key="GridCell.Tab.0.bottom" timestamp="1581075937559">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="244" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581075937559" />
-    <state width="1899" height="161" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579523338876" />
-    <state width="1899" height="161" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579555523040" />
-    <state width="1899" height="244" key="GridCell.Tab.0.center" timestamp="1581075937559">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="244" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581075937559" />
-    <state width="1899" height="161" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579523338876" />
-    <state width="1899" height="161" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579555523040" />
-    <state width="1899" height="244" key="GridCell.Tab.0.left" timestamp="1581075937558">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="244" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581075937558" />
-    <state width="1899" height="161" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579523338876" />
-    <state width="1899" height="161" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579555523040" />
-    <state width="1899" height="244" key="GridCell.Tab.0.right" timestamp="1581075937559">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="244" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581075937559" />
-    <state width="1899" height="161" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579523338876" />
-    <state width="1899" height="161" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579555523040" />
-    <state width="1899" height="347" key="GridCell.Tab.1.bottom" timestamp="1581064786187">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581064786187" />
-    <state width="1899" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577457264547" />
-    <state width="1899" height="347" key="GridCell.Tab.1.center" timestamp="1581064786187">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="347" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581064786187" />
-    <state width="1899" height="347" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577457264547" />
-    <state width="1899" height="347" key="GridCell.Tab.1.left" timestamp="1581064786187">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="347" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581064786187" />
-    <state width="1899" height="347" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577457264547" />
-    <state width="1899" height="347" key="GridCell.Tab.1.right" timestamp="1581064786187">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="347" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581064786187" />
-    <state width="1899" height="347" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577457264547" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1579090002846">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579090002846" />
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -539,6 +703,40 @@
           <url>file://$PROJECT_DIR$/fuzzy-hash-ssdeep3/hash.py</url>
           <line>83</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Plugins/FusionPlusPlus/GenerateFakeCode.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../nnRus.Git/CppDownloader.02.STD.UAC/Sources/Fusion/BuildPP.py</url>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Sources/Fusion/BuildPP.py</url>
+          <line>168</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/back_to_original.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Tools/Python/GenerateDynamicFiles.py</url>
+          <line>130</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../nnRus.Git/CppDownloader.01.STD.REG/Tools/Python/GenerateDynamicFiles.py</url>
+          <line>134</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/SignPatcher.py</url>
+          <line>92</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
