@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdaf022f-16bb-4e22-b25b-c4b4130424b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/PythonNSISUnit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonNSISUnit.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_s0512_0.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_s1024_0.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_s1024_1.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_s1024_2.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_s1024_3.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_s1024_4.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_s1024_5.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_s1024_6.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_s1024_7.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_s1024_8.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_s1024_9.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_s1024_A.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_s1024_B.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_s1024_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_s1024_D.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_s1024_E.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_s1024_F.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example.nsi" beforeDir="false" afterPath="$PROJECT_DIR$/example.nsi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fuzzy-hash-ssdeep3/files/file1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/fuzzy-hash-ssdeep3/files/file1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fuzzy-hash-ssdeep3/files/file2.dat" beforeDir="false" afterPath="$PROJECT_DIR$/fuzzy-hash-ssdeep3/files/file2.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/list.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -365,7 +342,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SignPatcher.py" />
-      <option name="PARAMETERS" value="--main 2b --input-file &quot;d:\PythonNSISUnit\tmp.exe&quot; --output-file &quot;d:\PythonNSISUnit\tmp.exe&quot;" />
+      <option name="PARAMETERS" value="--main 2a --input-file &quot;d:\PythonNSISUnit\zit.exe&quot; --output-file &quot;d:\PythonNSISUnit\zit.exe&quot;" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -640,7 +617,6 @@
       <item itemvalue="Python.GenerateImportTable.REG.FUSION" />
       <item itemvalue="Python.Post-Build_Event" />
       <item itemvalue="Python.ProductDetector.UAC" />
-      <item itemvalue="Python.SignPatcher" />
       <item itemvalue="Python.WDHelper_Post-Build_Event" />
       <item itemvalue="Python.aspr" />
       <item itemvalue="Python.back_to_original" />
@@ -653,6 +629,7 @@
       <item itemvalue="Python.modify_files" />
       <item itemvalue="Python.sign_regular" />
       <item itemvalue="Python.spoil_import_table" />
+      <item itemvalue="Python.SignPatcher" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -735,8 +712,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/SignPatcher.py</url>
-          <line>92</line>
-          <option name="timeStamp" value="19" />
+          <line>109</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
