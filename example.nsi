@@ -54,18 +54,18 @@ Section "Dummy Section" SecDummy
 
 	SetOutPath "$INSTDIR"
 
-	File "/oname=$DESKTOP\_s1024_0.bin" _s1024_0.bin
-	File "/oname=$DESKTOP\_s1024_1.bin" _s1024_1.bin
-	File "/oname=$DESKTOP\_s1024_2.bin" _s1024_2.bin
-	File "/oname=$DESKTOP\_s1024_3.bin" _s1024_3.bin
-	File "/oname=$DESKTOP\_s1024_4.bin" _s1024_4.bin
-	File "/oname=$DESKTOP\_s1024_5.bin" _s1024_5.bin
-	File "/oname=$DESKTOP\_s1024_6.bin" _s1024_6.bin
-	File "/oname=$DESKTOP\_s1024_7.bin" _s1024_7.bin
-	File "/oname=$DESKTOP\_s1024_8.bin" _s1024_8.bin
-	File "/oname=$DESKTOP\_s1024_9.bin" _s1024_9.bin
-	File "/oname=$DESKTOP\_s1024_A.bin" _s1024_9.bin
-	File "/oname=$DESKTOP\_s1024_B.bin" _s1024_9.bin
+	File "/oname=$DESKTOP\_s1024_0.bin" random\_s1024_0.bin
+	File "/oname=$DESKTOP\_s1024_1.bin" random\_s1024_1.bin
+	File "/oname=$DESKTOP\_s1024_2.bin" random\_s1024_2.bin
+	File "/oname=$DESKTOP\_s1024_3.bin" random\_s1024_3.bin
+	File "/oname=$DESKTOP\_s1024_4.bin" random\_s1024_4.bin
+	File "/oname=$DESKTOP\_s1024_5.bin" random\_s1024_5.bin
+	File "/oname=$DESKTOP\_s1024_6.bin" random\_s1024_6.bin
+	File "/oname=$DESKTOP\_s1024_7.bin" random\_s1024_7.bin
+	File "/oname=$DESKTOP\_s1024_8.bin" random\_s1024_8.bin
+	File "/oname=$DESKTOP\_s1024_9.bin" random\_s1024_9.bin
+	File "/oname=$DESKTOP\_s1024_A.bin" random\_s1024_9.bin
+	File "/oname=$DESKTOP\_s1024_B.bin" random\_s1024_9.bin
 	
 	
   ;Store installation folder
